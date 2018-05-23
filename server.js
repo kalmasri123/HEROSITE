@@ -4,6 +4,7 @@ var fs = require('fs')
 var app = express()
 var bodyParser=require('body-parser')
 
+var port = process.env.PORT || 8080;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json({ extended: false }));
