@@ -15,12 +15,7 @@ resp.sendFile('subs.html',{root:__dirname})
 
 
 })
-app.get('/subs.html', function(req, res){ 
 
-res.sendFile('index.css',{root:__dirname})
-
-res.end();
-});
 app.post('/subs.html',function(req, resp){
 
 console.log(JSON.stringify(req.body))
